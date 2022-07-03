@@ -7,7 +7,7 @@
    [re-frame.core :as rf]
    [reagent.core :as r]
    [yaml-config-manager-ui.core :refer [render screen]]
-   [yaml-config-manager-ui.demo.views :refer [demo]]
+   [yaml-config-manager-ui.demo.views :refer [yaml-ui]]
    [yaml-config-manager-ui.events]
    [yaml-config-manager-ui.resize :refer [size]]
    [yaml-config-manager-ui.subs]
@@ -19,7 +19,7 @@
   Returns hiccup demo element to run the demo app."
   [_]
   (let [view @(rf/subscribe [:view])]
-    [demo {:view view}]))
+    [yaml-ui {:view view}]))
 
 (def cli-options
   [["-p" "--port PORT" "port number"

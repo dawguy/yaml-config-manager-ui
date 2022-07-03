@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "description": "FIXME",
   "main": "target/main.js",
-  "author": "FIXME <FIXME@FIXME.com>",
+  "author": "David Wright",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/FIXME/yaml-config-manager-ui"
+    "url": "https://github.com/dawguy/yaml-config-manager-ui"
   },
   "directories": {
     "bin": "bin",

@@ -4,7 +4,7 @@
    [reagent.core :as r]
    [yaml-config-manager-ui.core :refer [render screen]]
    [yaml-config-manager-ui.debug.views :as debug]
-   [yaml-config-manager-ui.demo.views :refer [demo]]
+   [yaml-config-manager-ui.demo.views :refer [yaml-ui]]
    [yaml-config-manager-ui.main :as main]))
 
 (defn ui
@@ -13,7 +13,7 @@
   [_]
   (let [view @(rf/subscribe [:view])
         rows (:rows @(rf/subscribe [:size]))]
-    [demo
+    [yaml-ui
      {:view view}
      [debug/debug-box rows]]))
 
